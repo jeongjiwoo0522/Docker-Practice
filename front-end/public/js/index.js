@@ -12,3 +12,16 @@ toggle.addEventListener("click", (e) => {
     navBarIcons.style.display = "none";
   }
 });
+
+const boardArticle = document.getElementById("board");
+const chatArticle = document.getElementById("chat");
+
+boardArticle.addEventListener("click", (e) => {
+  document.querySelector(".article__board").style.display = "block";
+  document.querySelector(".article__chat").style.display = "none";
+});
+
+chatArticle.addEventListener("click", (e) => {
+  document.querySelector(".article__chat").style.display = "block";
+  document.querySelector(".article__board").style.display = "none";
+});

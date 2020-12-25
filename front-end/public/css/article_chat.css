@@ -1,0 +1,47 @@
+.article__chat {
+  display: none;
+  background-color: #f0f4f5;
+  float: right;
+  width: 80%;
+  height: 87.7%;
+}
+
+.chat_bax {
+  display: block;
+  position: relative;
+  width: 95%;
+  height: 85%;
+  margin: auto;
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid silver;
+}
+
+.input__chat {
+  display: grid;
+  grid-template-columns: 7fr 1fr;
+  align-items: center;
+  margin-top: 15px;
+  margin-left: 30px;
+}
+
+.text__chat {
+  width: 98%;
+  height: 100%;
+}
+
+.submit__chat { 
+  height: 40px;
+  width: 100px;
+}
+
+.mine { text-align: right; }
+.mine div:first-child, .other div:first-child { font-size: 12px; }
+.mine div:last-child, .other div:last-child {
+  display: inline-block;
+  border: 1px solid silver;
+  border-radius: 5px;
+  padding: 2px 5px;
+  max-width: 300px;
+}

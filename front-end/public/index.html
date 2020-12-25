@@ -5,7 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Docker</title>
   <link rel="shortcut icon" href="./favicon.png">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css//aside.css">
+  <link rel="stylesheet" href="./css/article_chat.css">
+  <link rel="stylesheet" href="./css/article_board.css">
+  <link rel="stylesheet" href="./css/navbar.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Langar&family=Noto+Sans+KR:wght@400;900&family=Source+Sans+Pro&display=swap" rel="stylesheet">
   <script src="./js/index.js" defer></script>
@@ -33,6 +37,26 @@
 
     <a href="#" class="navbar__togle"><i class="fas fa-bars"></i></a>
   </nav>
-  
+
+  <aside class="aside">
+    <ul class="aside__menu">
+      <li id="board"><i class="fas fa-house-user"></i><span>게시판</span></li>
+      <li id="chat"><i class="fas fa-comment-dots"></i><span>채팅</span></li>
+    </ul>
+  </aside>
+
+  <article class="article__chat">
+    <section class="chat_bax">
+      <div class="mine"><div>dasf</div></div>
+      <div class="other"><div>adfs</div></div>
+      <div class="mine"><div>ssdfsdfs<br>affa</div></div>
+    </section>
+    <section class="input__chat">
+      <input class="text__chat form-check-input" type="text">
+      <button class="submit__chat btn btn-primary" type="submit">Chat </button>
+    </section>
+  </article>
+
+  <article class="article__board">board</article>
 </body>
 </html>
