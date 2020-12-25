@@ -1,5 +1,8 @@
 FROM node:latest
 
-WORKDIR /
+WORKDIR /home/node/app
 
-RUN npm install
+CMD ["node", "index.js"]
+
+# 컨테이너 실행 
+# docker run --name frontend-con -v $(pwd):/home/node/app -p 8000:8000 -d frontend-img
