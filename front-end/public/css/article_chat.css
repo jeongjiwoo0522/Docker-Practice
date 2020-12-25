@@ -36,7 +36,15 @@
   width: 100px;
 }
 
-.mine { text-align: right; }
+.mine { 
+  text-align: right;
+  margin-right: 10px; 
+  margin-top: 3px;
+}
+.other {
+  margin-left: 10px;
+  margin-top: 3px;
+}
 .mine div:first-child, .other div:first-child { font-size: 12px; }
 .mine div:last-child, .other div:last-child {
   display: inline-block;
