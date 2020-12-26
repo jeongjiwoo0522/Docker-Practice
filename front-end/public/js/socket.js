@@ -1,6 +1,6 @@
 const socket = io.connect("http://localhost:3000");
 
-const API_URL = "http://localhost:3000/api";
+const API_URL = "http://localhost:3000/socket";
 const chatBax = document.querySelector(".chat_bax");
 
 socket.on("connect", () => {
