@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start:prod": "node ./build/app.js",
-    "start": "nodemon --exec ts-node ./app.ts"
+    "start": "nodemon --exec ts-node ./src/app.ts"
   },
   "author": "",
   "license": "ISC",
