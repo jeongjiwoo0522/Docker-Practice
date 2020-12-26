@@ -14,6 +14,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Langar&family=Noto+Sans+KR:wght@400;900&family=Source+Sans+Pro&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/b4b9c59ad3.js" crossorigin="anonymous"></script>
   <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="./js/index.js" defer></script>
   <script src="./js/socket.js" defer></script>
 </head>
@@ -49,19 +50,10 @@
 
   <article class="article__chat">
     <section class="chat_bax">
-      <div class="mine"><div>dasf</div></div>
-      <div class="other"><div>adfs</div></div>
-      <div class="other"><div>adfs</div></div>
-      <div class="other"><div>adfs</div></div>
-      <div class="other"><div>adfs</div></div>
-      <div class="mine"><div>ssdfsdfs<br>affa</div></div>
-      <div class="mine"><div>ssdfsdfs<br>affa</div></div>
-      <div class="mine"><div>ssdfsdfs<br>affa</div></div>
-      <div class="mine"><div>ssdfsdfs<br>affa</div></div>
     </section>
     <section class="input__chat">
-      <input class="text__chat form-check-input" type="text">
-      <button class="submit__chat btn btn-primary" type="submit">Chat </button>
+      <input id="chatBax" class="text__chat form-check-input" type="text">
+      <button id="chatBtn" class="submit__chat btn btn-primary" type="submit">Chat</button>
     </section>
   </article>
 
