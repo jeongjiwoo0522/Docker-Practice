@@ -1,5 +1,5 @@
 import express, { Request, Response, NextFunction } from "express";
-import { makeChat, showChatList, showInfo } from "./router";
+import { deleteChat, makeChat, showChatList, showInfo } from "./router";
 
 interface ExtendRequest extends Request {
   [key: string]: any;
@@ -17,6 +17,7 @@ const router: express.Router = express.Router();
 
 router.get("/chat", showChatList);
 router.post("/chat", makeChat);
+router.delete("/chat", deleteChat);
 router.get("/info", showInfo);
 
 export default router;

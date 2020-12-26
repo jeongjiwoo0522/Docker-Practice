@@ -7,7 +7,9 @@ const webSocket = (server: Server, app: Application) => {
   app.set("io", io);
 
   io.on("connect", (socket: Socket) => {
-    console.log("connect", socket.request.headers["user-agent"].slice(80, 100));
+    const aggent: string = socket.request.headers["user-agent"].slice(80, 100);
+    app.set("aggent", aggent);
+    console.log("connect", aggent);
   });
 } 
 
