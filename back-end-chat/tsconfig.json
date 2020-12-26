@@ -8,6 +8,7 @@
     "esModuleInterop": true,
     "outDir": "./build",
     "experimentalDecorators": true,
-    "strictNullChecks": false
+    "strictNullChecks": false,
+    "emitDecoratorMetadata": true
   }
 }
