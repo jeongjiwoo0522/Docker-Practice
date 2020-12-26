@@ -1,7 +1,7 @@
 import { EntityRepository, Repository } from "typeorm";
 import { Chat } from "../models/chat";
 
-@EntityRepository()
+@EntityRepository(Chat)
 class ChatRepository extends Repository<Chat> {
   public async createChat(chat: string, aggent: string): Promise<Chat> {
     const newChat = new Chat();
