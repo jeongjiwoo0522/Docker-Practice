@@ -14,6 +14,10 @@ class ChatRepository extends Repository<Chat> {
     return await this.createQueryBuilder("chat")
     .getMany();
   }
+
+  public async deleteAll() {
+    await this.clear();
+  }
 }
 
 export default ChatRepository;
