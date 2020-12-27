@@ -14,4 +14,4 @@ RUN npx tsc
 CMD ["npm", "run", "start:prod"]
 
 # 컨테이너 실행 
-# docker run -d -p 8000:8000 backend-chat-img
+# docker run -p 8000:8000 -d {image}

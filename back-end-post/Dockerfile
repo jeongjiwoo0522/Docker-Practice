@@ -8,3 +8,6 @@ RUN python -m pip install --user --upgrade pip
 RUN pip install flask
 
 CMD ["python", "app.py"]
+
+# 컨테이너 실행
+# docker run --name {name} -v $(pwd):/usr/src/app -p 5000:5000 -d {image}
