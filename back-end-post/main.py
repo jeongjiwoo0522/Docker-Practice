@@ -1,6 +1,6 @@
 from app import app 
 
-import showPostList
+import showPostList, addPost, deletePost
 
 # flask router decorater
 # use 
@@ -14,7 +14,9 @@ def hellp_world():
 # flask add_url_rule api
 # use add_url_rule(rule, endpoint=None, view_func=None, provide_automatic_options=None, **options)
 
-app.add_url_rule("/post", "index", showPostList.service, methods=["GET"])
+app.add_url_rule("/post", "view", showPostList.service, methods=["GET"])
+app.add_url_rule("/post", "add", addPost.service, methods=["POST"])
+app.add_url_rule("/post", "delete", deletePost.service, methods=["DELETE"])
 
 if __name__ == "__main__":
   app.run(host="0.0.0.0", port=5000)
