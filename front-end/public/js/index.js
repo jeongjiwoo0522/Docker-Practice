@@ -1,5 +1,5 @@
 const SOCKET_API_URL = "http://localhost:3000/socket";
-const POST_API_URL = "http://localhost:5000";
+const POST_API_URL = "http://localhost:5000/post";
 
 const toggle = document.querySelector(".navbar__togle");
 
