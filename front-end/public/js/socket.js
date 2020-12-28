@@ -1,6 +1,5 @@
 const socket = io.connect("http://localhost:3000");
 
-const API_URL = "http://localhost:3000/socket";
 const chatBax = document.querySelector(".chat_bax");
 
 socket.on("connect", () => {
@@ -8,7 +7,7 @@ socket.on("connect", () => {
 });
 
 async function postChat(chat, userAggent) {
-  const res = await axios.post(`${API_URL}/chat`, {
+  const res = await axios.post(`${SOCKET_API_URL}/chat`, {
     chat: chat,
     aggent: userAggent,
   });
@@ -44,7 +43,7 @@ function appentChatOther(chat) {
 }
 
 function deleteAllChat() {
-  axios.delete(`${API_URL}/chat`);
+  axios.delete(`${SOCKET_API_URL}/chat`);
 }
 
 function paintChatList(resChatList, userAggent) {
@@ -69,10 +68,10 @@ function paintChat(chat, userAggent) {
 }
 
 async function init() {
-  const resInfo = await axios.get(`${API_URL}/info`);
+  const resInfo = await axios.get(`${SOCKET_API_URL}/info`);
   const userAggent = resInfo.data.aggent;
   
-  const resChatList = await axios.get(`${API_URL}/chat`);
+  const resChatList = await axios.get(`${SOCKET_API_URL}/chat`);
   paintChatList(resChatList.data, userAggent);
 
   document.getElementById("chatBtn").onclick = () => {

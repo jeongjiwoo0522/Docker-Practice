@@ -1,3 +1,6 @@
+const SOCKET_API_URL = "http://localhost:3000/socket";
+const POST_API_URL = "http://localhost:5000";
+
 const toggle = document.querySelector(".navbar__togle");
 
 toggle.addEventListener("click", (e) => {
@@ -25,3 +28,11 @@ chatArticle.addEventListener("click", (e) => {
   document.querySelector(".article__chat").style.display = "block";
   document.querySelector(".article__board").style.display = "none";
 });
+
+async function init() {
+  const res = await axios.get(`${SOCKET_API_URL}/info`);
+  console.log(res.data);
+  localStorage.setItem("aggent", res.data.aggent);
+}
+
+init()
