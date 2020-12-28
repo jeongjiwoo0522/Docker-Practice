@@ -4,6 +4,7 @@ WORKDIR /home/node/app
 
 COPY ./package.json ./package.json
 COPY ./tsconfig.json ./tsconfig.json
+COPY ./.env ./.env
 
 RUN npm install
 
