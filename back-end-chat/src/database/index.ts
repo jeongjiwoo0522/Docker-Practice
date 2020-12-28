@@ -1,5 +1,5 @@
 import { ConnectionOptions } from "typeorm";
-import { db } from "../../config";
+import { db } from "../config";
 import path from "path";
 
 const connectionOptions: ConnectionOptions = {
