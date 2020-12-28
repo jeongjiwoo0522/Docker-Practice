@@ -23,8 +23,15 @@ async function handlePost() {
   console.log(res.data);
 }
 
-function handleDelete() {
-  console.log(this.parentElement.getId());
+async function handleDelete() {
+  const id = this.parentElement.getId();
+  console.log(id);
+  const res = await axios.delete(`${POST_API_URL}`, {
+    data: {
+      postId: id,
+    },
+  });
+  console.log(res.data);
 }
 
 function insertEventListener() {
