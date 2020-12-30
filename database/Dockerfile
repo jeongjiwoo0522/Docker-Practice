@@ -1,6 +1,6 @@
 FROM mysql:latest
 
-# 도커환경의 환경변수 설정 
+# 도커환경의 환경변수 설정
 
 ENV MYSQL_DATABASE docker
 
