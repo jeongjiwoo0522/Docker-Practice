@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "private": true,
+  "repository": "https://github.com/jeongjiwoo0522/Docker-Practice",
   "scripts": {
     "start:prod": "node ./build/app.js",
     "start": "nodemon --exec ts-node ./src/app.ts"
