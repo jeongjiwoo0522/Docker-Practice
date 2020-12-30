@@ -6,7 +6,7 @@ COPY ./package.json ./package.json
 COPY ./tsconfig.json ./tsconfig.json
 COPY ./.env ./.env
 
-RUN npm install
+RUN npm install --no-option
 
 COPY ./src ./src
 
